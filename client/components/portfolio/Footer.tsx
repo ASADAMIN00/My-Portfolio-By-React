@@ -66,7 +66,7 @@ export function Footer() {
           className="mt-8 pt-8 border-t text-center"
         >
           <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
-            © {currentYear} Alex Johnson. Made with{" "}
+            © {currentYear} Asadullah Amin. Made with{" "}
             <Heart className="w-4 h-4 text-red-500 fill-current" /> using React
             & Tailwind CSS
           </p>

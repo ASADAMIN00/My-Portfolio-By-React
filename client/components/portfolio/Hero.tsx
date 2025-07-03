@@ -59,7 +59,7 @@ export function Hero() {
           >
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-              Alex Johnson
+              Asadullah Amin
             </span>
           </motion.h1>
 
