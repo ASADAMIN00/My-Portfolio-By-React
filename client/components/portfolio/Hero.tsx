@@ -55,7 +55,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6"
+            className="flex flex-col items-center justify-center gap-6 mb-6"
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -72,7 +72,7 @@ export function Hero() {
               </div>
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-purple-500/20"></div>
             </motion.div>
-            <h1 className="text-5xl md:text-7xl font-bold text-center md:text-left">
+            <h1 className="text-5xl md:text-7xl font-bold text-center">
               Hi, I'm{" "}
               <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                 Asadullah Amin
