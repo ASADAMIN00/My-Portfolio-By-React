@@ -51,17 +51,34 @@ export function Hero() {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto"
         >
-          <motion.h1
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold mb-6"
+            className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6"
           >
-            Hi, I'm{" "}
-            <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-              Asadullah Amin
-            </span>
-          </motion.h1>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="relative"
+            >
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fced739b820054442bf155f1d762a8337%2F42b4aaa928cd41a283233af7b50dd822?format=webp&width=800"
+                  alt="Asadullah Amin"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-purple-500/20"></div>
+            </motion.div>
+            <h1 className="text-5xl md:text-7xl font-bold text-center md:text-left">
+              Hi, I'm{" "}
+              <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+                Asadullah Amin
+              </span>
+            </h1>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
